@@ -14,10 +14,11 @@ class Rocket extends Phaser.GameObjects.Sprite {
     }
 
     update() {
+
         //left and right movement player 1
         if(this.ID == 'R1' && !this.isFiring){
             if(keyLEFT.isDown && this.x >= borderUISize + this.width) {
-
+                
                 this.x -= this.moveSpeed;
 
             } else if (keyRIGHT.isDown && this.x <= game.config.width - borderUISize - this.width){
@@ -32,6 +33,7 @@ class Rocket extends Phaser.GameObjects.Sprite {
             this.isFiring = true;
             this.sfxRocket.play();
         }
+        
         //if fired move up
         if(this.isFiring && this.y >= borderUISize * 3 + borderPadding){
 

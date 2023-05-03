@@ -15,7 +15,10 @@ let game = new Phaser.Game(config);
 let keyF, keyR, keyLEFT, keyRIGHT; //Player 1 keys
 let keyDOWN, twoPlayer;             //Add Player 2
 let keyW, keyA, keyD;              //Player 2
+
+//Additional Variables
 let highScore = 0;
+let timeRemaining;
 
 //set UI sizes
 let borderUISize = game.config.height / 15;
