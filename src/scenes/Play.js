@@ -21,6 +21,7 @@ class Play extends Phaser.Scene {
 
 
     create(){
+        this.input.mouse.disableContextMenu();
         this.timedEvent = this.time.delayedCall(30000, this.onEvent, [], this);
         twoPlayer = false;
         let playSong = this.sound.add('song');

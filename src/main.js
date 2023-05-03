@@ -1,3 +1,27 @@
+/*
+Name: Jose Orantes
+Rocket Patrol
+It took me about 8 hours to do the entire modding.
+Mods I chose:
+
+5-point tier
+High score tracking
+FIRE UI 
+copyright free implementation
+Speed increase after 30 seconds
+
+10-Point tier
+Display time remaining.
+Parallax scrolling
+
+15-Point tier
+New enemy spaceship (Arwing.png)
+Two player mode: Press down key to activate 2nd player and use W to Fire and A and D keys to move
+Time increases per collision detected
+Mouse controls added: Click and drag the ship and press right click to shoot.
+
+
+*/ 
 let config = {
     type: Phaser.AUTO,
     width: 640,
